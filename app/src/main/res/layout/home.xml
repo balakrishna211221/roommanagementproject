@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:src="@drawable/ic_perm_identity_black_24dp"
+    />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textColor="@color/projecttextcolor"
+    android:id="@+id/profileusername"
+
+        />
+
+    <TextView
+        android:id="@+id/pttotalshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/projecttextcolor"
+        android:textSize="25dp"
+
+    />
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/creatGroup"
+            android:text="creatgroup"
+            android:textColor="@color/projecttextcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:backgroundTint="#DBD0D0"
+      android:src="@drawable/creatgr"
+
+            android:layout_weight="1"
+></ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/maketranp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:backgroundTint="#DBD0D0"
+        android:src="@drawable/makept"
+        ></ImageButton>
+    <ImageButton
+        android:id="@+id/makeMandtory"
+
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:backgroundTint="#DBD0D0"
+        android:src="@drawable/makemadetory"
+        ></ImageButton>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/logout"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#DBD0D0"
+        android:text="Logout"
+        android:textColor="#A30808"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
+
+
+
+
+</LinearLayout>

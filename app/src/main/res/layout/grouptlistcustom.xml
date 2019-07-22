@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Reasongl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reason"
+        android:textSize="35dp"
+        
+        />
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Datetimegl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="date time"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/amountgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="amount"
+            android:textSize="25dp"/>
+
+
+
+</LinearLayout>

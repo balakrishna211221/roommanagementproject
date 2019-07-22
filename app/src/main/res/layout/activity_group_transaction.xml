@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".PersonalTransaction">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/projectcomponentcolor"
+            android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/groreason"
+            android:hint="reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:gravity="start|top"
+            /></com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/projectcomponentcolor"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dateg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="date"
+            android:ems="10"
+            android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/projectcomponentcolor"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/amountg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="amount"
+            android:ems="10"
+            android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup"
+            ><RadioButton
+            android:id="@+id/creditcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="creditcard"
+            android:textColor="@color/projecttextcolor"/>
+
+            <RadioButton
+                android:id="@+id/debitcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="debitcard"
+                android:textColor="@color/projecttextcolor"/>
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button"
+            app:backgroundTint="#E6CDD2"
+            android:textColor="#660000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Button" />
+
+
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addmumber"
+    android:background="@drawable/design"
+    android:layout_weight="1"
+android:padding="15dp"
+
+    >
+
+
+
+    <TextView
+        android:id="@+id/groupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/projecttextcolor"
+
+        android:text="groupname"
+
+        android:textSize="35dp"/>
+    <TextView
+        android:id="@+id/gid"
+        android:layout_width="match_parent"
+        android:textColor="@color/projecttextcolor"
+        android:layout_height="wrap_content"
+        android:text="gid"
+
+        android:paddingLeft="10dp"
+        android:textSize="25dp"/>
+
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="match_parent"
+        android:textColor="@color/projecttextcolor"
+        android:layout_height="wrap_content"
+
+        android:text="admin"
+        android:textSize="25dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:textColor="@color/projectcomponentcolor"
+        android:layout_height="wrap_content"
+        android:id="@+id/addtransactionsingroup"
+        android:background="@drawable/design"
+        android:backgroundTint="@color/projecttextcolor"
+
+        android:text="Add Transaction"/>
+
+
+
+</LinearLayout>

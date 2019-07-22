@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:hint="Phone No."
+            android:textColorHint="@color/projectcomponentcolor"
+            app:passwordToggleEnabled="true"
+            android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:hint="Reason"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="@color/projectcomponentcolor"
+            android:layout_gravity="center">
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" /></com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:hint="Amount"
+            android:textColorHint="@color/projectcomponentcolor"
+            app:passwordToggleEnabled="true"
+            android:layout_gravity="center">
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:hint="Start Date"
+            android:textColorHint="@color/projectcomponentcolor"
+            app:passwordToggleEnabled="true"
+            android:layout_gravity="center">
+        <EditText
+            android:id="@+id/startdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:hint="EndDate"
+            android:textColorHint="@color/projectcomponentcolor"
+            app:passwordToggleEnabled="true"
+            android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/enddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/projectcomponentcolor"
+            android:ems="10"
+            android:inputType="date" /></com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/button"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            style="@style/Widget.MaterialComponents.Button"
+            app:backgroundTint="@color/projectcomponentcolor"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/projecttextcolor"
+            android:text="Button" />
+    </LinearLayout>
+
+</layout>

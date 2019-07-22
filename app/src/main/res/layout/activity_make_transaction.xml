@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".PersonalTransaction">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+        <EditText
+            android:id="@+id/reason1"
+            android:hint="reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:gravity="start|top"
+            />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="date"
+            android:ems="10"
+            android:inputType="date" />
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="amount"
+            android:ems="10"
+            android:inputType="number" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup"
+            ><RadioButton
+            android:id="@+id/creditcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="creditcard" />
+
+            <RadioButton
+                android:id="@+id/debitcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="debitcard" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+
+
+
+    </LinearLayout>
+</layout>

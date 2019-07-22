@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddGroup">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@string/title_home"
+        android:padding="4sp"
+        android:textColor="@color/projecttextcolor"
+        android:text="New Mumber"
+        android:textSize="65dp"
+        android:textStyle="bold" />
+
+
+    <View style="@style/Divider.Horizontal"/>
+
+    <View style="@style/Divider.Horizontal2"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/projectcomponentcolor"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="@color/projectcomponentcolor"
+        android:inputType="textPersonName"
+
+        android:hint="name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/projectcomponentcolor"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="number"/></com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:id="@+id/addgropubt"
+    android:layout_height="wrap_content"
+    style="@style/Widget.MaterialComponents.Button"
+    app:backgroundTint="#E6CDD2"
+    android:textColor="#660000"
+    android:textStyle="bold"
+    android:layout_marginLeft="150dp"
+    android:layout_marginTop="25dp"
+    android:text="Add"
+    android:textSize="20sp"/>
+
+</LinearLayout>
+</layout>
